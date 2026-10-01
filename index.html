@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="English A1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#04060a">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>English in Forks — 30 дней с нуля до A1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Caveat:wght@500;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --night:#04060a; --pine:#0b1516; --mist:#8fa3a8; --ice:#c9d6da; --moon:#e9ecea;
+  --paper:#c7cdcb; --paper-2:#b3bbb9; --ink:#12181a; --ink-soft:#3f4a4d;
+  --blood:#6d1124; --apple:#a8142d; --glass:#12181c; --line:#26343a;
+  --title:'Cormorant Garamond','Georgia',serif;
+  --hand:'Caveat','Segoe Script',cursive;
+  --body:'Lora',Georgia,'Times New Roman',serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{height:100%;scroll-padding-top:calc(60px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100%;background:var(--night);color:var(--ice);font-family:var(--body);font-size:16.5px;line-height:1.55;
+  background-image:radial-gradient(ellipse at 15% 0%,#14262a 0,transparent 55%),radial-gradient(ellipse at 90% 40%,#1b1018 0,transparent 55%);
+  background-attachment:fixed;position:relative}
+/* rain: the one ambient motion on the page */
+body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='190'%3E%3Cg stroke='%23b8c8d0' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M12 6L5 34M58 70L51 98M104 22L97 50M34 124L27 152M118 128L111 156M78 100L73 118M20 170L15 186'/%3E%3C/g%3E%3C/svg%3E");
+  opacity:.16;animation:rain .75s linear infinite}
+body::after{background-size:90px 120px;opacity:.1;animation-duration:.55s;animation-delay:-.2s}
+@keyframes rain{from{background-position:0 0}to{background-position:-30px 190px}}
+a{color:#0f3a4d;text-underline-offset:3px;text-decoration-thickness:1px;word-break:break-word}
+a:hover{color:var(--apple)}
+.on-dark a{color:#9fc4d3}.on-dark a:hover{color:#f0a3b0}
+:focus-visible{outline:2px solid #d7b36a;outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px 70px;position:relative;z-index:1}
+
+/* HERO */
+.hero{position:relative;height:clamp(340px,62vw,560px);overflow:hidden;margin:0 -16px;border-bottom:1px solid #000}
+.hero svg.scene{position:absolute;inset:0;width:100%;height:100%}
+.mist{position:absolute;left:-20%;right:-20%;height:38%;background:radial-gradient(ellipse at 50% 50%,rgba(170,190,195,.35),transparent 65%);filter:blur(12px)}
+.mist.a{bottom:12%;animation:drift 38s ease-in-out infinite alternate}
+.mist.b{bottom:-4%;opacity:.8;animation:drift 52s ease-in-out infinite alternate-reverse}
+@keyframes drift{from{transform:translateX(-6%)}to{transform:translateX(6%)}}
+.hero-text{position:absolute;left:0;right:0;bottom:9%;text-align:center;padding:0 16px}
+.hero h1{font-family:var(--title);font-weight:500;font-size:clamp(50px,11vw,128px);letter-spacing:.03em;line-height:.95;margin:0;color:var(--moon);text-shadow:0 0 40px rgba(0,0,0,.9),0 0 3px #000}
+.hero .sub{margin-top:14px;font-family:var(--title);font-style:italic;font-size:clamp(22px,3.8vw,38px);color:#d9dfdd;text-shadow:0 2px 14px #000}
+.hero .sub i{display:inline-block;width:.55em;height:.55em;background:var(--apple);border-radius:50% 50% 45% 45%;margin:0 .5em;vertical-align:.02em;box-shadow:0 0 14px rgba(168,20,45,.8)}
+.whisper{position:absolute;top:9%;left:5%;max-width:230px;font-family:var(--hand);font-size:clamp(20px,2.7vw,28px);line-height:1.15;color:#dfe5e3;transform:rotate(-3deg);text-shadow:0 2px 10px #000}
+
+/* PROGRESS */
+.progress{position:sticky;top:0;z-index:60;margin:0 -16px;padding:calc(8px + env(safe-area-inset-top,0px)) 16px 8px;background:rgba(4,6,10,.9);backdrop-filter:blur(5px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px}
+.progress .bar{flex:1;height:6px;background:#1b2428;border-radius:4px;overflow:hidden}
+.progress .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blood),var(--apple));transition:width .35s}
+.progress span{font-family:var(--hand);font-size:22px;color:var(--moon);white-space:nowrap}
+.progress nav{display:flex;gap:16px;font-size:14px}
+.progress nav a{color:var(--mist);text-decoration:none}
+.progress nav a:hover{color:var(--moon)}
+
+/* SECTION HEADS */
+.head{margin:52px 0 18px}
+.head h2{font-family:var(--title);font-weight:500;font-size:clamp(34px,5.5vw,58px);line-height:1;margin:0;color:var(--moon);letter-spacing:.02em}
+.head p{margin:8px 0 0;font-family:var(--title);font-style:italic;font-size:clamp(19px,2.4vw,24px);color:var(--mist)}
+.head::after{content:"";display:block;width:72px;height:2px;margin-top:14px;background:var(--apple)}
+
+/* TORN NOTES */
+.board{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.note{filter:drop-shadow(0 10px 12px rgba(0,0,0,.65));position:relative;min-width:0}
+.paper{background:var(--paper);color:var(--ink);padding:22px 22px 24px;clip-path:polygon(0% 2%,4% 0%,9% 1.6%,15% 0.4%,22% 1.8%,30% 0%,38% 1.4%,46% 0%,55% 1.8%,63% 0.4%,72% 1.8%,80% 0%,88% 1.4%,95% 0%,100% 1.6%,100% 97%,94% 99.6%,86% 98%,78% 100%,70% 98.4%,60% 100%,50% 98%,40% 100%,30% 98.4%,20% 100%,10% 98%,4% 100%,0% 97.5%);
+  background-image:radial-gradient(rgba(30,50,55,.12) 1px,transparent 1.5px);background-size:7px 7px}
+.note.dark .paper{background:#10171b;color:var(--ice);background-image:none;box-shadow:inset 3px 0 0 var(--apple)}
+.note.blood .paper{background:var(--blood);color:#f2e3e6;background-image:none}
+.note h3{font-family:var(--title);font-weight:600;font-size:clamp(26px,3.2vw,34px);line-height:1.05;margin:0 0 2px}
+.note .lead{margin:0 0 10px;font-size:14.5px;color:var(--ink-soft)}
+.note.dark .lead{color:var(--mist)}
+.hand{font-family:var(--hand);font-size:25px;line-height:1.1}
+.tape{position:absolute;top:-10px;left:50%;width:92px;height:24px;margin-left:-46px;background:rgba(190,205,205,.4);transform:rotate(-3deg);z-index:2;box-shadow:0 1px 3px rgba(0,0,0,.4)}
+.r1{transform:rotate(-1deg)}.r2{transform:rotate(.9deg)}.r3{transform:rotate(-.5deg)}
+.c4{grid-column:span 4}.c6{grid-column:span 6}.c12{grid-column:span 12}.c8{grid-column:span 8}
+
+/* POLAROIDS */
+.polas{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:flex-start;margin-top:30px}
+.pola{filter:drop-shadow(0 10px 12px rgba(0,0,0,.7));width:min(200px,42%);cursor:pointer;border:0;background:none;padding:0;text-align:center;color:inherit;font:inherit}
+.pola .fr{display:block;background:#dfe2dc;padding:8px 8px 5px}
+.pola .ph{aspect-ratio:1/1;overflow:hidden;background:#000;display:block;position:relative;filter:saturate(.8) contrast(1.05)}
+.pola svg,.pola img{width:100%;height:100%;object-fit:cover;display:block}
+.pola .cap{display:block;font-family:var(--hand);font-size:21px;color:#1b2022;line-height:1.1;padding:4px 0 1px}
+.pola .up{position:absolute;right:6px;bottom:6px;font-size:12px;background:rgba(0,0,0,.7);color:#fff;padding:1px 7px;border-radius:9px;opacity:0;transition:opacity .2s}
+.pola:hover .up,.pola:focus-visible .up{opacity:1}
+.pola:nth-child(5n+1){transform:rotate(-4deg)}.pola:nth-child(5n+2){transform:rotate(3deg)}.pola:nth-child(5n+3){transform:rotate(-1.5deg)}.pola:nth-child(5n+4){transform:rotate(4deg)}.pola:nth-child(5n+5){transform:rotate(-3deg)}
+.polahint{text-align:center;font-family:var(--hand);font-size:22px;color:var(--mist);margin:16px 0 0}
+
+/* FILMS */
+.films{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:22px}
+.film{position:relative;background:var(--glass);border:1px solid var(--line);padding:0;overflow:hidden;display:flex;flex-direction:column}
+.film .art{height:120px;position:relative}
+.film .art svg{width:100%;height:100%;display:block}
+.film .in{padding:14px 18px 18px;flex:1;display:flex;flex-direction:column;gap:6px}
+.film h3{font-family:var(--title);font-weight:600;font-size:28px;line-height:1.05;margin:0;color:var(--moon)}
+.film .lv{font-family:var(--hand);font-size:22px;color:#e1a0ad;line-height:1}
+.film p{margin:0;font-size:15px;color:var(--ice)}
+.film a{margin-top:auto;font-size:14.5px;color:#9fc4d3}
+.film.tw{border-color:var(--apple)}
+.tip{margin-top:20px}
+
+/* YOUTUBE */
+.yt{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,255px),1fr));gap:14px}
+.yt a{display:block;text-decoration:none;background:var(--glass);border:1px solid var(--line);border-left:3px solid var(--apple);padding:12px 16px;color:var(--moon);transition:background .2s,border-color .2s}
+.yt a:hover{background:#1a2329;border-color:#3b5058;border-left-color:var(--apple)}
+.yt b{display:block;font-family:var(--title);font-size:23px;font-weight:600;line-height:1.1}
+.yt small{display:block;margin-top:3px;font-size:13.5px;color:var(--mist)}
+.sub-h{font-family:var(--hand);font-size:28px;color:var(--moon);margin:28px 0 10px}
+
+/* SCHEDULE */
+.week{margin-top:38px}
+.week h3{font-family:var(--title);font-weight:600;font-size:clamp(30px,4.2vw,44px);margin:0;color:var(--moon);line-height:1}
+.week .goal{font-family:var(--hand);font-size:25px;color:#e1a0ad;margin:4px 0 14px}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,470px),1fr));gap:16px;align-items:start}
+details.day{filter:drop-shadow(0 6px 8px rgba(0,0,0,.55))}
+details.day>summary{list-style:none;cursor:pointer;background:#141c20;color:var(--moon);padding:12px 16px;display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-left:5px solid #3b5058}
+details.day>summary::-webkit-details-marker{display:none}
+details.day[open]>summary{background:var(--blood);border-color:var(--blood);border-left-color:var(--apple)}
+details.day.done>summary{border-left-color:#d7b36a}
+.dn{font-family:var(--title);font-size:38px;line-height:1;min-width:1.7ch;font-weight:600}
+.dt{flex:1;line-height:1.2;font-family:var(--title);font-size:21px;font-weight:600}
+.dt small{display:block;font-family:var(--body);font-weight:400;font-size:13.5px;color:#aebcc0;margin-top:2px}
+details.day[open] .dt small{color:#e9c3cb}
+.dchev{transition:transform .2s;color:var(--mist)}
+details[open] .dchev{transform:rotate(90deg)}
+.dbody{background:var(--paper);color:var(--ink);padding:14px 18px 18px;background-image:radial-gradient(rgba(30,50,55,.12) 1px,transparent 1.5px);background-size:7px 7px}
+.step{display:flex;gap:11px;padding:9px 0;border-bottom:1px dashed rgba(0,0,0,.25)}
+.step:last-of-type{border-bottom:0}
+.step input{appearance:none;-webkit-appearance:none;flex:none;width:22px;height:22px;margin:3px 0 0;border:2px solid var(--ink);border-radius:3px;background:#dfe3e0;cursor:pointer;position:relative}
+.step input:checked{background:var(--apple);border-color:var(--apple)}
+.step input:checked::after{content:"";position:absolute;left:6px;top:1px;width:5px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(40deg)}
+.step .t{display:block;font-family:var(--hand);font-size:23px;line-height:1;color:var(--blood)}
+.step .m{font-size:15px;display:block}
+.words{margin:4px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:2px 14px;font-size:14.5px}
+.words li b{color:#0b2b3a}
+
+footer{margin-top:60px;text-align:center;font-family:var(--title);font-style:italic;font-size:clamp(26px,4vw,42px);color:var(--moon);line-height:1.2}
+footer small{display:block;margin-top:16px;font-family:var(--body);font-style:normal;font-size:13px;color:#6f8088}
+
+@media (max-width:860px){
+  .board{grid-template-columns:1fr}
+  .c4,.c6,.c8,.c12{grid-column:auto}
+  .progress nav{display:none}
+  .r1,.r2,.r3{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  body::before,body::after,.mist{animation:none!important}
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+@media print{body::before,body::after{display:none}.progress{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero" id="top">
+  <svg class="scene" id="heroScene" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+  <div class="mist a"></div><div class="mist b"></div>
+  <div class="whisper">Новый язык — это как новая жизнь. И она начинается с первого слова.</div>
+  <div class="hero-text">
+    <h1>English in Forks</h1>
+    <div class="sub">30 дней<i></i>с нуля до A1</div>
+  </div>
+</header>
+
+<div class="progress" role="status">
+  <span id="pct">0 из 150 шагов</span>
+  <div class="bar"><i id="barfill"></i></div>
+  <nav aria-label="Разделы"><a href="#films">Фильмы</a><a href="#youtube">YouTube</a><a href="#plan">План на месяц</a></nav>
+</div>
+
+<main>
+  <div class="polas" id="polas"></div>
+  <p class="polahint">Нажми на полароид, чтобы вставить свой кадр из фильма.</p>
+
+  <!-- FILMS -->
+  <section id="films">
+    <div class="head"><h2>Фильмы</h2><p>Лёгкие и интересные. Смотри с английскими субтитрами.</p></div>
+    <div class="films" id="filmGrid"></div>
+    <div class="note blood tip">
+      <div class="paper"><p class="hand" style="margin:0;font-size:30px">Сначала с субтитрами, потом без!</p></div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+  <section id="youtube" class="on-dark">
+    <div class="head"><h2>Видео на YouTube</h2><p>Нажми на название: откроется подборка роликов канала для начинающих.</p></div>
+    <div class="yt" id="ytGrid"></div>
+    <p class="sub-h">Видео для старта</p>
+    <div class="yt" id="ytTopics"></div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="plan">
+    <div class="head"><h2>План на 30 дней</h2><p>Каждый день — маленький шаг к большой цели. Нажми на день, чтобы раскрыть задания.</p></div>
+    <div class="board">
+      <div class="note c12 r3">
+        <div class="paper">
+          <h3>Один день = около 60 минут</h3>
+          <p class="lead" style="margin:4px 0 0">Если времени мало, сделай хотя бы шаги «Новые слова» и «Говори или пиши» (25 минут). Отмеченные шаги сохраняются в этом браузере.</p>
+        </div>
+      </div>
+    </div>
+    <div id="weeks"></div>
+  </section>
+</main>
+
+<footer>
+  Сумерки учат нас: даже в темноте можно найти свет.<br>И ты тоже сможешь.
+  <small>Иллюстрации нарисованы для этого гайда. Нажми на полароид, чтобы добавить свои картинки. Сайты иногда меняют адреса, проверяй ссылки.</small>
+</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+function rnd(seed){var s=seed;return function(){s=(s*9301+49297)%233280;return s/233280;};}
+function pines(w,n,base,color,seed,minH,maxH){
+  var r=rnd(seed),out="";
+  for(var i=0;i<n;i++){
+    var x=(i/(n-1))*w+(r()-.5)*40, ph=minH+r()*(maxH-minH), pw=ph*(0.22+r()*0.08), y=base, tiers=5, s1="", s2="";
+    for(var t=0;t<tiers;t++){
+      var ty=y-ph*(t/tiers), tw=pw*(1-t/tiers*0.85);
+      s1+=(x-tw).toFixed(1)+","+ty.toFixed(1)+" "; s2=(x+tw).toFixed(1)+","+ty.toFixed(1)+" "+s2;
+      var iy=y-ph*((t+0.6)/tiers), iw=tw*0.45;
+      s1+=(x-iw).toFixed(1)+","+iy.toFixed(1)+" "; s2=(x+iw).toFixed(1)+","+iy.toFixed(1)+" "+s2;
+    }
+    out+='<polygon points="'+s1+x.toFixed(1)+","+(y-ph).toFixed(1)+" "+s2+'" fill="'+color+'"/>';
+  }
+  return out;
+}
+function heroScene(){
+  document.getElementById("heroScene").innerHTML=
+   '<defs>'+
+   '<linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070b10"/><stop offset=".5" stop-color="#1c2b31"/><stop offset="1" stop-color="#46595b"/></linearGradient>'+
+   '<radialGradient id="mn" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#e9ecea" stop-opacity=".9"/><stop offset=".4" stop-color="#cfd8d6" stop-opacity=".35"/><stop offset="1" stop-color="#cfd8d6" stop-opacity="0"/></radialGradient>'+
+   '<linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fb4b6" stop-opacity="0"/><stop offset="1" stop-color="#9fb4b6" stop-opacity=".5"/></linearGradient>'+
+   '<filter id="bl"><feGaussianBlur stdDeviation="9"/></filter>'+
+   '</defs>'+
+   '<rect width="1200" height="560" fill="url(#sk)"/>'+
+   '<circle cx="880" cy="150" r="190" fill="url(#mn)"/>'+
+   '<circle cx="880" cy="150" r="60" fill="#eceee8"/>'+
+   '<circle cx="860" cy="136" r="10" fill="#c5c9bf" opacity=".6"/><circle cx="900" cy="170" r="14" fill="#c5c9bf" opacity=".5"/><circle cx="893" cy="125" r="6" fill="#c5c9bf" opacity=".5"/>'+
+   '<g filter="url(#bl)" fill="#0b1217" opacity=".85"><ellipse cx="760" cy="150" rx="210" ry="22"/><ellipse cx="1010" cy="190" rx="240" ry="26"/><ellipse cx="520" cy="110" rx="260" ry="20"/></g>'+
+   '<g opacity=".9">'+pines(1200,28,380,"#1a2828",11,170,280)+'</g>'+
+   '<rect x="0" y="260" width="1200" height="160" fill="url(#fg)"/>'+
+   '<g>'+pines(1200,22,470,"#0f1a1a",23,230,370)+'</g>'+
+   '<rect x="0" y="350" width="1200" height="130" fill="url(#fg)" opacity=".85"/>'+
+   '<g>'+pines(1200,15,580,"#050909",37,320,490)+'</g>'+
+   '<rect width="1200" height="560" fill="#02060a" opacity=".22"/>';
+}
+function miniScene(kind){
+  var s='<svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="'+kind+'">';
+  if(kind==="forest"){
+    s+='<defs><linearGradient id="a1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101c24"/><stop offset="1" stop-color="#546666"/></linearGradient></defs><rect width="200" height="200" fill="url(#a1)"/><circle cx="142" cy="46" r="17" fill="#eceee8"/>'+pines(200,9,150,"#203130",5,50,90)+pines(200,7,205,"#080f0f",8,110,170);
+  }else if(kind==="eclipse"){
+    s+='<rect width="200" height="200" fill="#06080d"/><circle cx="100" cy="92" r="62" fill="none" stroke="#9fb0c4" stroke-width="1" opacity=".25"/><circle cx="100" cy="92" r="46" fill="none" stroke="#e9d3a0" stroke-width="3" opacity=".95"/><circle cx="100" cy="92" r="42" fill="#03040a"/>'+pines(200,8,205,"#080f0f",13,70,120);
+  }else if(kind==="apple"){
+    s+='<rect width="200" height="200" fill="#050608"/><path d="M100 70c-12-12-38-6-40 22-2 28 20 56 40 52 20 4 42-24 40-52-2-28-28-34-40-22z" fill="#a8142d"/><path d="M100 70c0-12 4-22 12-30" stroke="#3a2a1a" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M112 46c8-8 20-6 24-2-4 8-16 10-24 2z" fill="#1d3a22"/><ellipse cx="84" cy="96" rx="9" ry="16" fill="#fff" opacity=".18" transform="rotate(20 84 96)"/>';
+  }else if(kind==="bus"){
+    s+='<defs><linearGradient id="a3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3a3a"/><stop offset="1" stop-color="#121a19"/></linearGradient></defs><rect width="200" height="200" fill="url(#a3)"/>'+pines(200,8,130,"#0d1515",21,60,100)+
+      '<rect x="20" y="92" width="160" height="56" rx="6" fill="#c89a22"/><rect x="20" y="132" width="160" height="6" fill="#9a7416"/>'+
+      '<g fill="#162023"><rect x="30" y="100" width="22" height="18"/><rect x="58" y="100" width="22" height="18"/><rect x="86" y="100" width="22" height="18"/><rect x="114" y="100" width="22" height="18"/><rect x="146" y="100" width="26" height="30"/></g>'+
+      '<circle cx="54" cy="150" r="12" fill="#080808"/><circle cx="142" cy="150" r="12" fill="#080808"/><rect x="0" y="158" width="200" height="42" fill="#090d0d"/>';
+  }else if(kind==="road"){
+    s+='<defs><linearGradient id="a5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d151b"/><stop offset=".6" stop-color="#3d4e50"/><stop offset="1" stop-color="#6a7b7a"/></linearGradient></defs><rect width="200" height="200" fill="url(#a5)"/>'+pines(200,12,118,"#0d1717",31,50,95)+
+      '<polygon points="94,118 106,118 200,200 0,200" fill="#161d20"/><g fill="#9fa99c"><polygon points="99,122 101,122 102,134 98,134"/><polygon points="97,142 103,142 105,162 95,162"/><polygon points="93,176 107,176 112,200 88,200"/></g><rect y="104" width="200" height="30" fill="#a8bbbc" opacity=".25"/>';
+  }
+  return s+'</svg>';
+}
+function buildPolas(){
+  var items=[["forest","мокрый лес"],["bus","первый день в школе"],["apple","красное на чёрном"],["road","дорога в тумане"],["eclipse","затмение"]];
+  var box=document.getElementById("polas");
+  items.forEach(function(it){
+    var b=document.createElement("button");
+    b.type="button"; b.className="pola"; b.setAttribute("aria-label","Вставить свою картинку: "+it[1]);
+    b.innerHTML='<span class="fr"><span class="ph">'+miniScene(it[0])+'<span class="up">заменить фото</span></span><span class="cap">'+it[1]+'</span></span>';
+    var inp=document.createElement("input"); inp.type="file"; inp.accept="image/*"; inp.hidden=true;
+    b.appendChild(inp);
+    b.addEventListener("click",function(e){ if(e.target!==inp) inp.click(); });
+    inp.addEventListener("change",function(){
+      var f=inp.files&&inp.files[0]; if(!f) return;
+      var rd=new FileReader();
+      rd.onload=function(){ var ph=b.querySelector(".ph"); var img=document.createElement("img"); img.src=rd.result; img.alt=it[1]; var up=ph.querySelector(".up"); ph.innerHTML=""; ph.appendChild(img); ph.appendChild(up); };
+      rd.readAsDataURL(f);
+    });
+    box.appendChild(b);
+  });
+}
+
+/* ---------- FILMS ---------- */
+function filmArt(c1,c2,kind){
+  var id="g"+Math.abs(hash(c1+c2+kind));
+  return '<svg viewBox="0 0 330 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c1+'"/><stop offset="1" stop-color="'+c2+'"/></linearGradient></defs><rect width="330" height="120" fill="url(#'+id+')"/>'+kind+'</svg>';
+}
+function hash(s){var h=0;for(var i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0;}return h;}
+var FILMS=[
+ {n:"Paddington",lv:"очень лёгкий",d:"Простая речь, много бытовых фраз и вежливых оборотов. Лучший старт.",u:"https://en.wikipedia.org/wiki/Paddington_(film)",art:filmArt("#27323a","#6b4a2e",'<rect x="0" y="86" width="330" height="34" fill="#12100e"/><path d="M150 86v-30a15 15 0 0 1 30 0v30z" fill="#2c4b6e"/><rect x="146" y="40" width="38" height="8" rx="2" fill="#8a1c25"/>')},
+ {n:"Paddington 2",lv:"очень лёгкий",d:"Продолжение: те же фразы, новые ситуации.",u:"https://en.wikipedia.org/wiki/Paddington_2",art:filmArt("#2a2f45","#5a3a38",'<rect x="0" y="90" width="330" height="30" fill="#0f0e12"/><circle cx="250" cy="30" r="14" fill="#e4d3a2" opacity=".85"/>')},
+ {n:"The Princess Diaries",lv:"лёгкий",d:"Школа, друзья, повседневная лексика. Классика.",u:"https://en.wikipedia.org/wiki/The_Princess_Diaries_(film)",art:filmArt("#31303f","#6e5b6d",'<polygon points="140,70 150,44 160,62 170,40 180,62 190,44 200,70" fill="#c8a85a"/><rect x="140" y="70" width="60" height="8" fill="#a98a3a"/>')},
+ {n:"Harry Potter and the Philosopher's Stone",lv:"средний",d:"Простая лексика, британское произношение, знакомый сюжет.",u:"https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)",art:filmArt("#101826","#2a3a4a",'<circle cx="95" cy="40" r="3" fill="#eee"/><circle cx="220" cy="28" r="2" fill="#eee"/><circle cx="270" cy="52" r="2.5" fill="#eee"/><path d="M110 108V70l10-14 10 14v38zM150 108V58l10-18 10 18v50zM190 108V74l10-12 10 12v34z" fill="#06090d"/>')},
+ {n:"Tangled",lv:"лёгкий",d:"Красивый и добрый. Песни помогают запоминать фразы.",u:"https://en.wikipedia.org/wiki/Tangled",art:filmArt("#232a46","#6a4b7a",'<circle cx="165" cy="60" r="24" fill="#e8d28a" opacity=".9"/><circle cx="165" cy="60" r="38" fill="#e8d28a" opacity=".18"/><rect x="0" y="94" width="330" height="26" fill="#0e1018"/>')},
+ {n:"Frozen",lv:"лёгкий",d:"Короткий и понятный. Много повторяющихся фраз.",u:"https://en.wikipedia.org/wiki/Frozen_(2013_film)",art:filmArt("#17283a","#7fa7c0",'<polygon points="165,26 178,60 165,94 152,60" fill="#e6f3fa" opacity=".9"/><polygon points="120,48 130,68 120,88 110,68" fill="#cfe6f2" opacity=".7"/><polygon points="212,48 222,68 212,88 202,68" fill="#cfe6f2" opacity=".7"/>')},
+ {n:"Twilight",lv:"сложнее, оставь на 29-й день",d:"Для атмосферы. Речь быстрее и сложнее, поэтому только с английскими субтитрами и на паузах.",u:"https://en.wikipedia.org/wiki/Twilight_(2008_film)",tw:1,art:filmArt("#05070c","#26363a",'<circle cx="235" cy="44" r="18" fill="#eceee8"/><circle cx="235" cy="44" r="34" fill="#eceee8" opacity=".12"/><path d="M0 120V88l12-18 12 18 12-22 12 22 12-16 12 16 12-26 12 26 12-18 12 18 12-24 12 24 12-18 12 18 12-22 12 22 12-16 12 16 12-26 12 26 12-18 12 18 12-22 12 22 12-18 12 18 12-24 12 24 12-16 12 16 12-20 12 20 12-16 12 16v32z" fill="#02040a"/>')}
+];
+(function(){
+  var g=document.getElementById("filmGrid");
+  FILMS.forEach(function(f){
+    var d=document.createElement("article"); d.className="film on-dark"+(f.tw?" tw":"");
+    d.innerHTML='<div class="art">'+f.art+'</div><div class="in"><h3>'+esc(f.n)+'</h3><span class="lv">'+esc(f.lv)+'</span><p>'+esc(f.d)+'</p><a href="'+f.u+'" target="_blank" rel="noopener">Страница фильма</a></div>';
+    g.appendChild(d);
+  });
+})();
+
+/* ---------- YOUTUBE ---------- */
+function yq(q){return "https://www.youtube.com/results?search_query="+encodeURIComponent(q);}
+var CH=[
+ ["BBC Learning English","видеоуроки с субтитрами","BBC Learning English beginners"],
+ ["English with Lucy","ясное британское произношение","English with Lucy beginner"],
+ ["Rachel's English","произношение по американской системе","Rachel's English pronunciation beginner"],
+ ["engVid","грамматика простым языком","engVid beginner English"],
+ ["Bob the Canadian","медленная речь для начинающих","Learn English with Bob the Canadian beginner"],
+ ["Easy English","интервью на улице с двойными субтитрами","Easy English street interviews subtitles"],
+ ["Speak English with Vanessa","живая разговорная речь","Speak English with Vanessa beginner"],
+ ["Peppa Pig","детский мультфильм, самая простая речь","Peppa Pig full episodes English"]
+];
+var TOP=[
+ ["Алфавит и произношение","день 1","English alphabet song and pronunciation for beginners"],
+ ["Приветствия и знакомство","день 2","English greetings and introductions for beginners"],
+ ["Числа и время","день 3","English numbers 1 to 100 and telling time for beginners"],
+ ["Диалоги для начинающих","день 20","English conversation practice for beginners dialogues"]
+];
+function fillYT(id,arr,withNote){
+  var box=document.getElementById(id);
+  arr.forEach(function(a){
+    var l=document.createElement("a"); l.href=yq(a[2]); l.target="_blank"; l.rel="noopener";
+    l.innerHTML='<b>'+esc(a[0])+'</b><small>'+esc(a[1])+'</small>';
+    box.appendChild(l);
+  });
+}
+
+/* ---------- SCHEDULE DATA ---------- */
+var W=[
+ {name:"Неделя 1: Основы",goal:"Алфавит, знакомство, числа, простейшие предложения",days:[
+  {t:"Алфавит и произношение",g:"Выучить 26 букв и звуки, которых нет в русском",
+   w:"A — эй; B — би; C — си; D — ди; E — и; F — эф; G — джи; H — эйч; I — ай; J — джей; K — кей; L — эл; M — эм; N — эн; O — оу; P — пи; Q — кью; R — ар; S — эс; T — ти; U — ю; V — ви; W — дабл-ю; X — экс; Y — уай; Z — зед",
+   r:"Особые звуки: th [θ] — think, th [ð] — this, w — water (губы трубочкой, не «в»), h — hello (просто выдох). Ударение в слове — одно, на гласный.",
+   q:"English alphabet song and pronunciation for beginners",
+   s:"Назови по буквам своё имя, фамилию, город и 5 предметов вокруг. Запиши голосовое на 10 секунд, послушай себя."},
+  {t:"Приветствия и знакомство",g:"Поздороваться, представиться, попрощаться",
+   w:"hello — привет; hi — привет (неформально); goodbye — до свидания; bye — пока; good morning — доброе утро; good evening — добрый вечер; good night — спокойной ночи; please — пожалуйста; thank you — спасибо; sorry — извините; excuse me — простите; yes / no — да / нет",
+   r:"Формула знакомства: Hello! My name is … Nice to meet you. How are you? — I'm fine, thanks. And you?",
+   q:"English greetings and introductions for beginners",
+   s:"Составь диалог из 6 реплик: приветствие → имя → как дела → пока. Проговори обе роли вслух."},
+  {t:"Числа, дни, время",g:"Считать до 100, называть дни недели и время",
+   w:"one — 1; two — 2; three — 3; four — 4; five — 5; six — 6; seven — 7; eight — 8; nine — 9; ten — 10; eleven — 11; twelve — 12; twenty — 20; thirty — 30; hundred — 100; Monday — понедельник; Friday — пятница; Sunday — воскресенье",
+   r:"What time is it? — It's five o'clock. Today is Monday. Осторожно: thirteen (13) — ударение на конце, thirty (30) — на начале.",
+   q:"English numbers 1 to 100 and telling time for beginners",
+   s:"Вслух назови свой возраст, дату рождения, номер телефона. Скажи, который час, по пяти произвольным циферблатам."},
+  {t:"Семья и профессии",g:"Рассказать о близких людях и работе",
+   w:"mother — мама; father — папа; sister — сестра; brother — брат; son — сын; daughter — дочь; husband — муж; wife — жена; friend — друг; teacher — учитель; doctor — врач; manager — менеджер; builder — строитель; student — студент; driver — водитель",
+   r:"Притяжательные: my, your, his, her, our, their. I am a student. She is a doctor. This is my brother.",
+   q:"family members and jobs vocabulary English beginners",
+   s:"Расскажи о трёх людях: This is my … His / Her name is … He / She is a … Запиши 6 предложений."},
+  {t:"Цвета и предметы",g:"Называть предметы и описывать их цвет",
+   w:"red — красный; blue — синий; green — зелёный; black — чёрный; white — белый; yellow — жёлтый; grey — серый; brown — коричневый; book — книга; phone — телефон; table — стол; chair — стул; bag — сумка; pen — ручка; door — дверь; window — окно; key — ключ",
+   r:"a / an: a book, an apple (перед гласным звуком). this / that: это / то. Множественное число: -s (books); исключения: man → men, child → children. What colour is it? — It's red.",
+   q:"colors and everyday objects English for beginners",
+   s:"Пройди по комнате и назови 10 предметов с цветом: a black phone, a white door… Запиши их."},
+  {t:"Простые предложения",g:"Собирать предложения: кто + что делает + что",
+   w:"I — я; you — ты/вы; he — он; she — она; it — оно; we — мы; they — они; have — иметь; like — нравиться; want — хотеть; live — жить; work — работать; see — видеть; need — нуждаться",
+   r:"Порядок слов: подлежащее + глагол + дополнение. I have a car. She likes tea. We live in Kazan. (Правило «be» — на 15-й день.)",
+   q:"basic English sentences word order beginners",
+   s:"Напиши 10 предложений: I have… I like… I want… I live in… Замени слова и проговори вслух."},
+  {t:"Повторение и тест",g:"Закрепить неделю 1",
+   w:"Повтори все слова недели 1 по карточкам. Отметь 10 самых трудных и выпиши на бумагу.",
+   r:"Без нового материала. Просмотри свои записи и исправь ошибки.",
+   q:"English A1 beginner quiz",
+   s:"Мини-тест для себя: 20 слов на перевод, знакомство без шпаргалки, счёт от 20 до 0, 10 предметов с цветами. Что не вышло, повтори завтра утром."}
+ ]},
+ {name:"Неделя 2: Жизнь вокруг",goal:"Дом, еда, магазин, город, транспорт, хобби",days:[
+  {t:"Дом и комнаты",g:"Описать, где ты живёшь",
+   w:"house — дом; room — комната; kitchen — кухня; bedroom — спальня; bathroom — ванная; living room — гостиная; bed — кровать; sofa — диван; garden — сад; garage — гараж; roof — крыша; fence — забор",
+   r:"There is / There are: There is a sofa in the living room. There are two beds. Предлоги: in, on, under, next to, behind.",
+   q:"house rooms and furniture English vocabulary beginners",
+   s:"Опиши свой дом или квартиру 6–8 предложениями: There is… There are… The kitchen is…"},
+  {t:"Еда и напитки",g:"Сделать простой заказ",
+   w:"bread — хлеб; water — вода; tea — чай; coffee — кофе; milk — молоко; apple — яблоко; meat — мясо; fish — рыба; soup — суп; breakfast — завтрак; lunch — обед; dinner — ужин",
+   r:"I like / I don't like. I would like a coffee, please — вежливый заказ. some — в утверждениях (some bread), any — в вопросах и отрицаниях (any milk?).",
+   q:"food vocabulary and ordering in a cafe English",
+   s:"Составь меню из 8 блюд и разыграй сценку в кафе: официант и клиент, по 5 реплик."},
+  {t:"Покупки и магазины",g:"Спросить цену и оплатить",
+   w:"shop — магазин; price — цена; money — деньги; cheap — дешёвый; expensive — дорогой; buy — покупать; pay — платить; big — большой; small — маленький; card — карта; cash — наличные; how much — сколько",
+   r:"How much is it? — It's ten euros. Can I pay by card? Can I have this, please? Числа + валюта: twenty dollars.",
+   q:"shopping English for beginners how much is it",
+   s:"Диалог в магазине: спроси цену трёх товаров, выбери один, оплати. Проговори роли."},
+  {t:"Транспорт",g:"Передвигаться и спрашивать дорогу",
+   w:"bus — автобус; car — машина; train — поезд; taxi — такси; plane — самолёт; bike — велосипед; walk — идти пешком; station — станция; ticket — билет; street — улица; stop — остановка",
+   r:"by bus / by car / on foot. Turn left, turn right, go straight. Where is the bus stop? — It's over there.",
+   q:"transport vocabulary and giving directions English",
+   s:"Объясни маршрут от дома до магазина: Go straight, turn left, it's next to the bank."},
+  {t:"Город и места",g:"Рассказать, что где находится",
+   w:"bank — банк; hospital — больница; park — парк; school — школа; cafe — кафе; hotel — отель; airport — аэропорт; museum — музей; near — рядом; far — далеко; opposite — напротив; between — между",
+   r:"Where is …? — It's next to / near / opposite the … Is there a bank near here? — Yes, there is.",
+   q:"places in the city English vocabulary beginners",
+   s:"Нарисуй простую карту улицы и опиши 6 мест: The park is next to the school."},
+  {t:"Хобби и интересы",g:"Говорить о том, что любишь",
+   w:"read — читать; watch — смотреть; play — играть; listen to — слушать; cook — готовить; travel — путешествовать; music — музыка; film — фильм; sport — спорт; games — игры; draw — рисовать; swim — плавать",
+   r:"Present Simple с I / you / we / they: I play games. Вопрос: Do you like music? — Yes, I do. / No, I don't. like + -ing: I like reading.",
+   q:"hobbies and free time English for beginners",
+   s:"Расскажи о 5 своих хобби и придумай 3 вопроса другу: Do you like…? Запиши 6 предложений."},
+  {t:"Повторение и тест",g:"Закрепить неделю 2",
+   w:"Повтори слова недели 2 и слова недели 1, которые ты отметил(а) трудными.",
+   r:"Пройди по темам недели и составь по 2 предложения на каждую.",
+   q:"English A1 vocabulary quiz house food shopping",
+   s:"Мини-тест: заказ в кафе, вопрос про цену, описание дома, маршрут до магазина, рассказ о хобби. Запиши на голосовое и послушай."}
+ ]},
+ {name:"Неделя 3: Общение",goal:"Настоящее, прошедшее, будущее, вопросы, диалоги",days:[
+  {t:"Глагол be: am / is / are",g:"Говорить о себе, состоянии и людях",
+   w:"happy — счастливый; tired — уставший; hungry — голодный; busy — занятый; ready — готовый; ok — нормально; ill — больной; late — поздно; early — рано; here — здесь; there — там",
+   r:"I am (I'm), you are (you're), he / she / it is, we / they are. Вопрос: Are you ok? Отрицание: I'm not tired. Краткий ответ: Yes, I am. / No, he isn't.",
+   q:"verb to be am is are English for beginners",
+   s:"10 предложений о себе и близких с be: I'm busy. She is at work. They are happy."},
+  {t:"Прошедшее: was / were",g:"Рассказать, где ты был(а) и как было",
+   w:"yesterday — вчера; last week — на прошлой неделе; ago — назад; at home — дома; at work — на работе; angry — злой; cold — холодный; hot — жаркий; good — хороший; bad — плохой",
+   r:"I / he / she / it was; you / we / they were. Was he at home? — Yes, he was. I wasn't late. Where were you yesterday?",
+   q:"past simple was were English for beginners",
+   s:"Расскажи, где ты был(а) вчера и как себя чувствовал(а): 6 предложений с was / were."},
+  {t:"Мой день: Present Simple",g:"Описать распорядок дня",
+   w:"wake up — просыпаться; get up — вставать; have breakfast — завтракать; go to work — идти на работу; work — работать; come home — приходить домой; cook — готовить; sleep — спать; every day — каждый день; usually — обычно; always — всегда; never — никогда",
+   r:"he / she / it + -s: He works. She goes (-es после o, s, sh, ch). У have — has. Частота ставится перед глаголом: I always drink tea.",
+   q:"daily routine Present Simple English beginners",
+   s:"Опиши свой день 8–10 предложениями: I get up at 7. I go to work. I usually…"},
+  {t:"Будущее: will и going to",g:"Говорить о планах",
+   w:"tomorrow — завтра; next week — на следующей неделе; soon — скоро; tonight — сегодня вечером; next year — в следующем году; plan — план; meet — встречать; visit — посещать; call — звонить; start — начинать",
+   r:"I will call you (решение сейчас). I'm going to visit London (план). Сокращение: I'll. Отрицание: I won't.",
+   q:"future will going to English for beginners",
+   s:"Составь 8 предложений о своих планах на завтра, неделю и год."},
+  {t:"Отрицания и вопросы",g:"Задавать вопросы и отвечать «нет»",
+   w:"what — что; where — где; who — кто; when — когда; why — почему; how — как; which — какой; can — мочь; can't — не мочь; do / does — вспомогательные",
+   r:"Do you work? She doesn't like coffee. What do you do? Where does he live? I can swim. I can't drive. После does основной глагол без -s: She doesn't like…",
+   q:"English question words and negatives for beginners",
+   s:"Придумай по одному вопросу с каждым вопросительным словом. Ответь на них письменно."},
+  {t:"Диалоги и ситуации",g:"Пройти три жизненные сценки",
+   w:"Can I help you? — Вам помочь?; Anything else? — Что-нибудь ещё?; Here you are — Вот, пожалуйста; You're welcome — Не за что; I don't understand — Я не понимаю; Can you speak slowly? — Говорите медленнее; How do you say …? — Как сказать …?; Let me check — Сейчас проверю",
+   r:"Сценки: кафе, магазин, дорога. В каждой минимум по 6 реплик.",
+   q:"English conversation practice for beginners dialogues",
+   s:"Разыграй три диалога вслух. Запиши на голосовое, послушай, исправь одну ошибку в каждом."},
+  {t:"Повторение и тест",g:"Закрепить неделю 3",
+   w:"Повтори глаголы и вопросительные слова недели. Выпиши 10 правил, которые пока забываются.",
+   r:"Составь по 3 предложения на be, was / were, Present Simple, will и вопрос.",
+   q:"English A1 grammar test present past future",
+   s:"Мини-тест: 15 предложений на перевод русский → английский, 5 вопросов о себе, 1 минута рассказа о вчерашнем дне."}
+ ]},
+ {name:"Неделя 4: Уверенность",goal:"Читать, слушать, писать и говорить своими словами",days:[
+  {t:"Чтение субтитров",g:"Прочитать первые английские тексты без страха",
+   w:"Выбери 10 незнакомых слов из субтитров и запиши с переводом.",
+   r:"Включи английские субтитры к простому видео (BBC Learning English, Peppa Pig), ставь на паузу и читай фразы вслух. Подчёркивай незнакомые слова, переводи только их.",
+   q:"BBC Learning English beginners subtitles",
+   s:"Прочитай субтитры 3 минут видео и перескажи 5 предложений своими словами."},
+  {t:"Аудирование",g:"Понять на слух общий смысл",
+   w:"Выбери 8 фраз из услышанного и выпиши целиком.",
+   r:"Слушай трижды: 1) без субтитров, 2) с английскими субтитрами, 3) проговаривая за диктором (shadowing).",
+   q:"Easy English street interviews beginner subtitles",
+   s:"Запиши главные 5 фактов из ролика простыми предложениями."},
+  {t:"Письмо",g:"Написать короткое письмо",
+   w:"Dear … / Hi … — Здравствуй, …; I'm writing to … — Я пишу, чтобы …; Best wishes — С наилучшими пожеланиями; See you soon — До скорой встречи; Write back soon — Напиши скорее",
+   r:"Заглавная буква в начале, точка в конце, I всегда с большой. Структура: приветствие → 3–5 предложений → пожелание → подпись.",
+   q:"how to write a simple email in English for beginners",
+   s:"Напиши другу письмо на 8–10 предложений: кто ты, где живёшь, что любишь, что планируешь."},
+  {t:"Говорение: About me",g:"Рассказать о себе за минуту",
+   w:"My name is … / I'm from … / I live in … / I work as … / I study … / I like … / My family is … / I want to …",
+   r:"Скелет монолога: имя → возраст → город → семья → работа или учёба → хобби → планы.",
+   q:"introduce yourself in English for beginners example",
+   s:"Запиши голосовое на 1 минуту. Прослушай, отметь 3 слова, где ошибся(лась) в произношении, и повтори их 5 раз."},
+  {t:"Мини-проект: Мой день",g:"Собрать всё пройденное вместе",
+   w:"Выбери 10 самых нужных для тебя слов месяца и поставь их в топ карточек.",
+   r:"Используй be, Present Simple, was / were, will, вопросы и there is.",
+   q:"a day in my life English beginner video",
+   s:"Текст на 10–12 предложений «Мой день» + диалог на 8 реплик. Прочитай вслух дважды."},
+  {t:"Любимая тема на выбор",g:"Выучить слова про то, что интересно именно тебе",
+   w:"Выбери тему: авто, игры, кино, работа, спорт, кулинария. Найди 15 слов, запиши перевод и по одному примеру.",
+   r:"Учить слова про то, что нравится, в 3 раза легче: мозг сам цепляется за интерес.",
+   q:"English vocabulary for hobbies beginner",
+   s:"Посмотри одно видео по теме на английском, составь 5 предложений с новыми словами."},
+  {t:"Повторение и финальный тест",g:"Проверить уровень A1",
+   w:"Пройди все слова месяца по карточкам: цель ≥ 80% верных.",
+   r:"Проверь себя: можешь ли ты представиться, заказать еду, спросить дорогу, рассказать о своём дне и задать 5 вопросов?",
+   q:"English A1 level speaking test",
+   s:"Запиши монолог на 2 минуты и сравни с записью 4-го дня. Отметь, что стало лучше и что ещё стоит подтянуть."},
+  {t:"Свободный день: кино",g:"Отдохнуть с английским",
+   w:"Во время фильма выпиши 10 фраз, которые поймёшь на слух.",
+   r:"Выбери фильм из раздела «Фильмы»: сначала с английскими субтитрами, потом важные сцены без них. Twilight — по желанию, для атмосферы.",
+   q:"Paddington movie English subtitles",
+   s:"Перескажи сюжет 5 предложениями по-английски."},
+  {t:"Итоги и план дальше",g:"Подвести итог и запланировать A2",
+   w:"Выбери 30 самых любимых слов месяца и повтори их.",
+   r:"Следующий этап A2: Present Continuous, Past Simple (regular и irregular verbs), сравнения, 1000+ слов.",
+   q:"English A2 course for beginners next step",
+   s:"Запиши видео или голосовое «30 дней английского»: что получилось, что было сложно, какие планы. Сравни с записью с 1-го дня."}
+ ]}
+];
+
+/* ---------- STORAGE ---------- */
+var KEY="en30_forks_v2", OLD="en30_forks_v1", state={};
+try{ state=JSON.parse(localStorage.getItem(KEY)||localStorage.getItem(OLD)||"{}")||{}; }catch(e){ state={}; }
+function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function wordsList(w){
+  if(w.indexOf(";")<0 || w.indexOf(" — ")<0) return '<span class="m">'+esc(w)+'</span>';
+  return '<ul class="words">'+w.split(";").map(function(p){
+    var a=p.trim().split(" — ");
+    return a.length>1 ? '<li><b>'+esc(a[0])+'</b> — '+esc(a.slice(1).join(" — "))+'</li>' : '<li>'+esc(p.trim())+'</li>';
+  }).join("")+'</ul>';
+}
+
+var total=0, dayNo=0, root=document.getElementById("weeks");
+W.forEach(function(wk){
+  var sec=document.createElement("div"); sec.className="week";
+  sec.innerHTML='<h3>'+esc(wk.name)+'</h3><p class="goal">'+esc(wk.goal)+'</p>';
+  var grid=document.createElement("div"); grid.className="days";
+  wk.days.forEach(function(d){
+    dayNo++; var n=dayNo;
+    var steps=[
+      {t:"10 мин · Повторение",m:n===1?"Заведи колоду карточек (бумажных или в телефоне) и подпиши её «English A1».":"Прокрути карточки вчерашнего дня и трудные слова прошлых дней."},
+      {t:"15 мин · Новые слова",m:wordsList(d.w)},
+      {t:"10 мин · Правило дня",m:'<span class="m">'+esc(d.r)+'</span>'},
+      {t:"15 мин · Смотри и слушай",m:'<span class="m">Найди видео по теме: <a href="'+yq(d.q)+'" target="_blank" rel="noopener">открыть подборку на YouTube</a>. Смотри дважды: без субтитров и с ними.</span>'},
+      {t:"10 мин · Говори или пиши",m:'<span class="m">'+esc(d.s)+'</span>'}
+    ];
+    var det=document.createElement("details"); det.className="day"; det.id="day"+n;
+    if(n===1) det.open=true;
+    var html='<summary><span class="dn">'+n+'</span><span class="dt">'+esc(d.t)+'<small>'+esc(d.g)+'</small></span><span class="dchev" aria-hidden="true">▸</span></summary><div class="dbody">';
+    steps.forEach(function(s,i){
+      total++;
+      var id="d"+n+"s"+i;
+      html+='<label class="step"><input type="checkbox" data-id="'+id+'" data-day="'+n+'"'+(state[id]?" checked":"")+'><span><span class="t">'+s.t+'</span>'+(s.m.indexOf("<ul")===0||s.m.indexOf("<span")===0?s.m:'<span class="m">'+s.m+'</span>')+'</span></label>';
+    });
+    html+='</div>';
+    det.innerHTML=html; grid.appendChild(det);
+  });
+  sec.appendChild(grid); root.appendChild(sec);
+});
+
+function refresh(){
+  var done=0;
+  document.querySelectorAll('input[data-day]').forEach(function(c){ if(c.checked) done++; });
+  document.getElementById("pct").textContent=done+" из "+total+" шагов";
+  document.getElementById("barfill").style.width=(done/total*100)+"%";
+  document.querySelectorAll("details.day").forEach(function(d){
+    var all=true;
+    d.querySelectorAll("input").forEach(function(b){ if(!b.checked) all=false; });
+    d.classList.toggle("done",all);
+  });
+}
+document.addEventListener("change",function(e){
+  var t=e.target;
+  if(t && t.matches && t.matches('input[type=checkbox][data-id]')){
+    if(t.checked) state[t.dataset.id]=1; else delete state[t.dataset.id];
+    save(); refresh();
+  }
+});
+
+fillYT("ytGrid",CH);
+fillYT("ytTopics",TOP);
+heroScene(); buildPolas(); refresh();
+})();
+</script>
+</body>
+</html>
